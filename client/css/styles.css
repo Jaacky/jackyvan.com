@@ -82,10 +82,11 @@ a {
 	transition: color 0.5s, font-size 0.5s;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover, .navbar-brand:focus {
 	color: #c0dfd9;
 	color: #e9ece5;
 	font-size: 35px;
+	outline: none;
 }
 
 .nav a {
