@@ -1,4 +1,5 @@
 .meteor/local
 .meteor/meteorite
 
+mup.json
 .DS_STORE
