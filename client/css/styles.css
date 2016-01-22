@@ -40,7 +40,7 @@ h3 {
 }
 
 h4 {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 h5 {
@@ -173,8 +173,12 @@ a {
 
 .project {
 	/*border: 2px solid #f0f0f0;*/
-	border: 2px solid #b3c2bf;
+	position: relative;
+	height: 180px;
+	/*border: 2px solid #b3c2bf;*/
+	padding: 6% 0;
 	margin: 5px;
+	background-color: #e9ece5;
 	/*box-shadow: 2px 2px 2px #d8d8d8;*/
 	box-shadow: 2px 2px 2px #b3c2bf;
 	-webkit-transform-style: preserve-3d;
@@ -191,9 +195,11 @@ a {
 	font-family: 'Roboto', sans-serif;
 }
 
-.project-details {
+.project-subheader {
+	padding: 7% 0;
+	text-align: center;
 	visibility: hidden;
-	transform: translateY(50%);
+	/*transform: translateY(50%);*/
 }
 
 .project:hover {
@@ -204,7 +210,7 @@ a {
 	display: none;
 }
 
-.project:hover > .project-details {
+.project:hover > .project-subheader {
 	visibility: visible;
 }
 
