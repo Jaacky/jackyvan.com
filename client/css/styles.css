@@ -167,6 +167,23 @@ a {
 	display: flex;
 }
 
+.modal-header, .modal-footer {
+	background-color: #c0dfd9;
+}
+
+.modal-body {
+	padding: 45px;
+	background-color: #e9ece5;
+}
+
+.modal-title {
+	font-weight: 200;
+}
+
+.btn-modal-close {
+	border-radius: 0;
+}
+
 .project-row {
 	/*display: flex;*/
 }
@@ -200,6 +217,11 @@ a {
 	text-align: center;
 	visibility: hidden;
 	/*transform: translateY(50%);*/
+}
+
+.project-details {
+	font-weight: 200;
+	font-size: 16px;
 }
 
 .project:hover {

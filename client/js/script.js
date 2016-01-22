@@ -3,9 +3,20 @@ var blockTitleIndicator = {
 	'closed' : '+',
 }
 
+Meteor.startup( function () {
+  $.getScript("js/jquery-2.1.4.min.js");
+  $.getScript("js/bootstrap.min.js");
+});
+
 if (Meteor.isClient) {
 	Template.layout.onRendered(function() {
-		$('.contain-hidden').on('click', function() {
+		$('.project').on('click', function(e) {
+			e.stopPropagation();
+			var id = $(this).attr('id');
+			$('#' + id).modal('show');
+		});
+
+		$('.contain-hidden').on('click', function(e) {
 			var container = $(this),
 				inner = $(this).find('.hidden-inner'),
 				title = $(this).find('.block-title'),

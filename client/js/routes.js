@@ -6,6 +6,7 @@ Router.route('/', function () {
  	this.render('projects', {to: 'projects'});
  	this.render('experience', {to: 'experience'});
  	this.render('skills-and-technologies', {to: 'skills-and-technologies'});
+ 	this.render('project-modals', {to: 'project-modals'});
 });
 
 Router.route('/bugsplat', function() {
