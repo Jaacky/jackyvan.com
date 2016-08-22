@@ -2,10 +2,34 @@
 <html>
 <head>
   <title>Jacky Van</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji|Roboto:300,400" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{url_for('static', filename='css/lib/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+
+  <script src="{{url_for('static', filename='js/lib/jquery-3.1.0.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/lib/bootstrap.min.js')}}"></script>
 </head>
 
 <body>
-  {% block container %}
-  {% endblock container %}
+  <nav class="nav container">
+    <div class="row">
+      <div class="col-sm-2 nav-menu-wrapper">
+        <div class="nav-menu">
+          <a href="#">About</a>
+        </div>
+        <div class="nav-menu">
+          <a href="#">Projects</a>
+        </div>
+        <div class="nav-menu">
+          <a href="#">Experience</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid main">
+    {% block container %}
+    {% endblock container %}
+  </div>
 </body>
 </html>
