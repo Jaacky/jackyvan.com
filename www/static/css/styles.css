@@ -24,12 +24,16 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	font-size: 90px;
+	font-size: 75px;
 	font-family: 'Roboto', sans-serif;
 }
 
 h1 .emphasize {
 	font-weight: 400;
+}
+
+h1.title {
+	position: relative;
 }
 
 h2 {
@@ -55,6 +59,7 @@ h5 {
 	font-weight: 400;
 	position: fixed;
 	top: 5%;
+	z-index: 1337;
 }
 
 .nav-menu-wrapper {
@@ -73,19 +78,16 @@ h5 {
 	font-weight: 700;
 }
 
-.title {
-	margin-top: 75px;
-}
-
 .main {
 	text-align: center;
 }
 
 .main > .row {
-	height: 100vh;
+	height: 100%;
 	background-color: #3b3a36;
 	background-color: #20201e;
 	color: white;
+	padding: 50px;
 }
 
 #about {
@@ -93,6 +95,47 @@ h5 {
 	background-size: cover;
 	display: flex;
 	align-items: center;
+	height: 100vh
+}
+
+#about h1 {
+	font-size: 90px;
+}
+
+.project-container {
+	width: 25%;
+	display: inline-block;
+}
+
+.project {
+	border: 3px solid #c8c8c8;
+	border-radius: 5px;
+	width: 100%;
+	padding: 25px;
+	margin-top: 15px;
+	box-shadow: 2px 2px 2px black;
+}
+
+.project h2 {
+	margin-top: 0;
+}
+
+#experiences {
+	background: url('/static/img/unsplash-001.jpeg') no-repeat center;
+	position: relative;
+}
+
+.experience {
+	text-align: left;
+}
+
+.mask {
+	background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .social-media a, .social-media h3 {
