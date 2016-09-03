@@ -6,6 +6,16 @@
 	DARK - #3b3a36
 */
 
+/*.mask {
+	background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+
+
 a {
 	color: #e9ece5;
 }
@@ -129,13 +139,13 @@ h5 {
 	text-align: left;
 }
 
-.mask {
-	background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.experience .mask {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	margin-bottom: 15px;
 }
 
 .social-media a, .social-media h3 {
