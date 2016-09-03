@@ -151,6 +151,23 @@ h5 {
 	margin-bottom: 15px;
 }
 
+.role-date {
+	display: flex;
+}
+
+.role-date > * {
+	flex: 1;
+	margin-bottom: 0;
+}
+
+.role-date h2 {
+	text-align: left;
+}
+
+.role-date h4 {
+	text-align: right;
+}
+
 .social-media a, .social-media h3 {
 	color: #e9ece5;
 	padding: 0 5px;
