@@ -115,6 +115,11 @@ h5 {
 	font-size: 90px;
 }
 
+#projects {
+	/*background: url('/static/img/unsplash-009.jpeg') no-repeat center;*/
+	/*position relative;*/
+}
+
 .project-container {
 	width: 25%;
 	display: inline-block;

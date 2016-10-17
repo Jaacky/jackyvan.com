@@ -2,7 +2,7 @@ $(document).ready(function() {
     /*
         Nav menu scrolling
     */
-    $(".nav-menu").on("click", function() {
+    $(".nav-navigate-within").on("click", function() {
         var id = "#" + $(this).html().trim().toLowerCase();
         $(".nav-menu").removeClass("active");
         $(this).addClass("active");
@@ -18,7 +18,7 @@ $(document).ready(function() {
     */
     $(document).on("scroll", function() {
         var scrollPos = $(document).scrollTop();
-        $('.nav-menu').each(function () {
+        $('.nav-navigate-within').each(function () {
             var currLink = $(this);
             var refElement = $("#" + currLink.html().trim().toLowerCase());
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
