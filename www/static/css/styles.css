@@ -73,7 +73,7 @@ h5 {
 	text-align: center;
 }
 
-.nav-menu {
+.nav-menu, .nav-menu a {
 	display: inline-block;
 	text-align: left;
 	width: 50%;
@@ -83,11 +83,11 @@ h5 {
 	cursor: pointer;
 }
 
-.nav-menu:hover {
+.nav-menu:hover, .nav-menu a:hover {
 	color: #adadad;
 }
 
-.nav-menu.active {
+.nav-menu.active, .nav-menu.active a {
 	font-weight: 700;
 }
 
