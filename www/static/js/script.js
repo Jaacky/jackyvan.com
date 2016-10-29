@@ -17,7 +17,7 @@ $(document).ready(function() {
         https://jsfiddle.net/cse_tushar/Dxtyu/141/
     */
     $(document).on("scroll", function() {
-        var scrollPos = $(document).scrollTop() + 200;
+        var scrollPos = $(document).scrollTop() + 400;
         $('.nav-navigate-within').each(function () {
             var currLink = $(this);
             var refElement = $("#" + currLink.html().trim().toLowerCase());
@@ -42,5 +42,10 @@ $(document).ready(function() {
                 currLink.removeClass("active");
             }
         });
+    });
+
+    /* Match height on all .project divs */
+    $(function() {
+        $('.project-inner').matchHeight({ byRow: false });
     });
 });
