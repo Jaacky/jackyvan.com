@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 10px;
 	color: white;
 	font-family: 'Roboto Slab', sans-serif;
-	text-shadow: 2px 2px 10px black;
+	text-shadow: 0px 3px 1px black;
 }
 
 h1 {
@@ -115,13 +115,21 @@ h5 {
 	font-size: 90px;
 }
 
+.about-container {
+	display: inline-block;
+	padding: 50px 25px;
+	background-color: rgba(0,0,0,0.25);
+	width: 100%;
+	max-width: 1200px;
+}
+
 #projects {
 	/*background: url('/static/img/unsplash-009.jpeg') no-repeat center;*/
 	/*position relative;*/
 }
 
 .project-container {
-	width: 80%;
+	width: 69%;
 	display: inline-block;
 }
 
@@ -170,6 +178,10 @@ h5 {
 	position: relative;
 }
 
+#experiences .title {
+	margin-bottom: 30px;
+}
+
 .experience {
 	text-align: left;
 }
@@ -181,6 +193,11 @@ h5 {
 	height: 100%;
 	padding: 20px;
 	margin-bottom: 15px;
+}
+
+.experience p {
+	font-size: 16px;
+	font-weight: 300;
 }
 
 .role-date {
