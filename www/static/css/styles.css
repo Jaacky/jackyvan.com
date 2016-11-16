@@ -16,7 +16,20 @@
 }*/
 
 
+.screen-mask {
+	position: fixed;
+	z-index: 1338;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,255,255,0.69);
+	display: none;
+}
 
+.screen-mask.active {
+	display: block;
+}
 
 a:hover, a:focus {
 	text-decoration: none;
@@ -172,6 +185,29 @@ h5 {
 	position:absolute;
 }
 
+.project-mask-overlay {
+	position: fixed;
+	z-index: 1339;
+	height: 400px;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+
+	-webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+	
+	padding: 50px;
+	border-radius: 8px;
+	background-color: rgba(32, 32, 30, 0.9);
+	display: none;
+}
+
+.project-mask-overlay.active {
+	display: block;
+}
+
 #project-label {
 	/*background: url('/static/img/unsplash-007.jpeg') no-repeat center;*/
 	background: url('/static/img/Label_interface_01.png') no-repeat center;
@@ -230,3 +266,13 @@ h5 {
 	color: #e9ece5;
 	padding: 0 5px;
 }
+
+/*@media (max-width: 768px) {
+	.social-media a {
+		width: 100%;
+	}
+
+	#nav-social-media a:not(:first-child) {
+		margin: 8px 0px 0px 0px;
+	}
+}*/

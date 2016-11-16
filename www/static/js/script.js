@@ -48,4 +48,15 @@ $(document).ready(function() {
     $(function() {
         $('.project-inner').matchHeight({ byRow: false });
     });
+
+    $('.project-inner').on('click', function() {
+        var id = $(this).attr('id');
+        $($(this).find('.project-mask-overlay')).addClass('active');
+        $('.screen-mask').addClass('active');
+    });
+
+    $('.screen-mask').on('click', function() {
+        $('.screen-mask').removeClass('active');
+        $('.project-mask-overlay').removeClass('active');
+    })
 });
