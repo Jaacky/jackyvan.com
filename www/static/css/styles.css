@@ -39,8 +39,9 @@ h1, h2, h3, h4, h5 {
 	font-weight: 100;
 	margin-top: 10px;
 	color: white;
-	font-family: 'Roboto Slab', sans-serif;
-	text-shadow: 0px 3px 1px black;
+	/*font-family: 'Roboto Slab', sans-serif;*/
+	font-family: 'Roboto';
+	/*text-shadow: 0px 3px 1px black;*/
 }
 
 h1 {
@@ -50,6 +51,9 @@ h1 {
 
 h1 .emphasize {
 	font-weight: 400;
+	font-weight: 700;
+	letter-spacing: 12px;
+	text-transform: uppercase;
 }
 
 h1.title {
@@ -94,6 +98,10 @@ h5 {
 	padding: 3px 0;
 	color: #e9ece5;
 	cursor: pointer;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	letter-spacing: 3px;
+	font-weight: 300;
 }
 
 .nav-menu:hover, .nav-menu a:hover {
@@ -102,7 +110,8 @@ h5 {
 
 .nav-menu.active, .nav-menu.active a {
 	font-weight: 700;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	color: white;
 }
 
 #nav-social-media a {
@@ -130,19 +139,41 @@ h5 {
 	background-size: cover;
 	display: flex;
 	align-items: center;
-	height: 100vh
+	height: 100vh;
+
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+#about .mask {
+	background-color: rgba(0,0,0,0.25);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
 }
 
 #about h1 {
 	font-size: 90px;
 }
 
+#about h2 {
+	text-transform: uppercase;
+	font-weight: 100;
+	font-family: 'Roboto';
+	letter-spacing: 5px;
+	text-shadow: none;
+}
+
 .about-container {
 	display: inline-block;
-	padding: 50px 25px;
+	/*padding: 50px 25px;
 	background-color: rgba(0,0,0,0.25);
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1200px;*/
 }
 
 #projects {
@@ -156,8 +187,9 @@ h5 {
 }
 
 .project-inner {
-	border: 3px solid #c8c8c8;
-	border-radius: 5px;
+	/*border: 3px solid #c8c8c8;*/
+	border: 1px solid white;
+	/*border-radius: 5px;*/
 	/*width: 100%;*/
 	padding: 25px;
 	margin-top: 30px;
@@ -189,7 +221,7 @@ h5 {
 	position: fixed;
 	z-index: 1339;
 	height: 400px;
-	width: 50%;
+	width: 30%;
 	top: 50%;
 	left: 50%;
 
@@ -200,12 +232,16 @@ h5 {
 	
 	padding: 50px;
 	border-radius: 8px;
-	background-color: rgba(32, 32, 30, 0.9);
+	background-color: rgba(32, 32, 30, 1);
 	display: none;
 }
 
 .project-mask-overlay.active {
 	display: block;
+}
+
+.project-mask-overlay p {
+	text-align: left;
 }
 
 #project-label {
