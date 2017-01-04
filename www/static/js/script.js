@@ -12,6 +12,13 @@ $(document).ready(function() {
         }, 500);
     });
 
+    $('.next-arrow').on('click', function() {
+        var next = "#" + $(this).data("nextSection");
+        $('html, body').animate({
+            scrollTop: $(next).offset().top
+        }, 500);
+    });
+
     /*
         Updating nav menu when scrolling
         https://jsfiddle.net/cse_tushar/Dxtyu/141/
@@ -58,5 +65,5 @@ $(document).ready(function() {
     $('.screen-mask').on('click', function() {
         $('.screen-mask').removeClass('active');
         $('.project-mask-overlay').removeClass('active');
-    })
+    });
 });

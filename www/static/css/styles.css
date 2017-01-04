@@ -176,9 +176,27 @@ h5 {
 	max-width: 1200px;*/
 }
 
+.next-arrow {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 2.5rem;
+}
+
+.next-arrow .fa-arrow-circle-down, .next-arrow:hover .fa-arrow-down {
+	display: none;
+}
+
+.next-arrow:hover .fa-arrow-circle-down {
+	display: block;
+	font-size: 3.5rem;
+}
+
 #projects {
 	/*background: url('/static/img/unsplash-009.jpeg') no-repeat center;*/
-	/*position relative;*/
+	position: relative;
+	padding-bottom: 100px;
 }
 
 .project-container {
