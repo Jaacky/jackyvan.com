@@ -272,6 +272,11 @@ h5 {
 	background: url('/static/img/NG_interface.png') no-repeat center;
 }
 
+#project-bugsplat {
+	background: url('/static/img/bugSplat_interface.png') no-repeat center;
+	background-size: cover;
+}
+
 #experiences {
 	background: url('/static/img/unsplash-001.jpeg') no-repeat center;
 	position: relative;
