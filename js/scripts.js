@@ -58,7 +58,12 @@ $(document).ready(function() {
     });
 
     /* Match height on all .project divs */
-    $(function() {
-        $('.project-inner').matchHeight({ byRow: false });
-    });
+    // $(function() {
+    //     $('.project-inner').matchHeight({ byRow: false });
+    // });
+
+    $('.projects-container').masonry({
+        itemSelector: '.project',
+        columnWidth: '.col-md-4'
+    })
 });

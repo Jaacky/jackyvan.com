@@ -2,6 +2,9 @@
     font-family: 'Roboto';
 }
 
+a {
+    color: #45b1cb
+}
 h1, h2, h3, h4 {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -140,10 +143,11 @@ h4 {
     max-width: 1000px;
     display: inline-block;
     text-align: left;
+    width: 100%;
 }
 
 .project-inner {
-    border: 1px solid white;
+    border: 3px solid white;
     padding: 25px;
     margin-top: 25px;
 }
@@ -168,7 +172,7 @@ h4 {
 .project-mask {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
     top: 0;
     left: 0;
@@ -236,5 +240,12 @@ h4 {
 @media (min-width: 992px) {
     .experience .mask {
         padding: 45px 75px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Overriding bootstrap col-md-4 width when smaller screen so projects take up full width */
+    .project {
+        width: 100%;
     }
 }
