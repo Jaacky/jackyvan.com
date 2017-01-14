@@ -255,3 +255,9 @@ h4 {
         width: 100%;
     }
 }
+
+@media (min-width: 1200px) {
+    #about h1 {
+        font-size: 12rem;
+    }
+}
