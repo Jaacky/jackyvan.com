@@ -194,7 +194,8 @@ h4 {
 }
 
 #experiences {
-	background: url('../img/unsplash-001.jpeg') no-repeat center;
+	background: url('../img/Optimized-unsplash-001.jpeg') no-repeat center;
+    background-size: cover;
 	position: relative;
 }
 
