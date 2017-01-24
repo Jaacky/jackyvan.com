@@ -5,6 +5,7 @@
 a {
     color: #45b1cb
 }
+
 h1, h2, h3, h4 {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -24,52 +25,6 @@ h4 {
     font-size: 1.4rem;
 }
 
-/*p {
-    font-family: 'PT Sans';
-}*/
-
-.nav {
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    z-index: 1337;
-    background-color: rgba(25,25,25,0.5);
-    width: 100%;
-}
-
-.nav.active {
-    background-color: rgba(25,25,25,1);
-}
-
-.nav-menu, .nav-menu a {
-    display: inline-block;
-    cursor: pointer;
-    padding: 5px;
-
-    text-transform: uppercase;
-    color: #e9ece5;
-    letter-spacing: 3px;
-    font-weight: 300;
-    font-size: 1.5rem;
-}
-
-.nav-menu:hover, .nav-menu a:hover {
-    color: #adadad;
-}
-
-.nav-menu.active, .nav-menu.active a {
-    font-weight: 700;
-    color: white;
-}
-
-#nav-social-media {
-    width: 100%;
-}
-/*
-#nav-social-media a:not(:first-child) {
-	margin-left: 5px;
-}*/
-
 .next-arrow {
 	position: absolute;
 	bottom: 25px;
@@ -87,12 +42,6 @@ h4 {
 	font-size: 3.5rem;
 }
 
-.main > .row {
-    height: 100%;
-    background-color: #20201e;
-    color: white;
-    padding: 50px 20px;
-}
 
 #about {
     /*background: url('../img/unsplash-004-resized.png') no-repeat center;*/
@@ -105,6 +54,7 @@ h4 {
     /*text-transform: uppercase;*/
     letter-spacing: 3px;
     text-align: center;
+    color: white;
 }
 
 #about .mask {
@@ -134,100 +84,43 @@ h4 {
     position: relative;
 }
 
-#projects {
-    position: relative;
-    padding-bottom: 100px;
+.details {
+    padding: 20px;
+    border-bottom: 2px solid black;
     text-align: center;
 }
 
-.projects-container {
-    max-width: 1000px;
+.details-inner {
     display: inline-block;
+    max-width: 500px;
+}
+
+.details h1, .details h2, .details h3, .details h4, .details p {
+    color: black;
     text-align: left;
-    width: 100%;
 }
 
-.project-inner {
-    border: 3px solid white;
-    padding: 25px;
-    margin-top: 25px;
+.details h1 {
+    font-size: 3rem;
+    /*margin-bottom: 35px;*/
+    text-align: center;
 }
 
-.project h2 {
-    position: relative;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    margin-top: 0;
-    padding-bottom: 10px;
-    border-bottom: 2px solid white;
+.details h4 {
+    color: #3973ac;
 }
 
-.project p {
-    position: relative;
-    font-size: 1.5rem;
-    word-break: break-word;
+.details ul {
+    color: black;
 }
 
-.project-mask {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    position: absolute;
-    top: 0;
-    left: 0;
+.experience, .project {
+    margin-top: 20px;
 }
 
-#project-label {
-	background: url('../img/Label_interface_01.png') no-repeat center;
-	background-size: cover;
-}
-
-#project-nanograv {
-	background: url('../img/NG_interface.png') no-repeat center;
-}
-
-#project-bugsplat {
-	background: url('../img/bugSplat_interface.png') no-repeat center;
-	background-size: cover;
-}
-
-#experiences {
-	background: url('../img/Optimized-unsplash-001.jpeg') no-repeat center;
-    background-size: cover;
-	position: relative;
-}
-
-#experiences .title {
-	margin-bottom: 30px;
-}
-
-.experience {
-	text-align: left;
-}
-
-.experience .mask {
-	background-color: rgba(0, 0, 0, 0.65);
-	position: relative;
-	width: 100%;
-	height: 100%;
-	padding: 20px;
-	margin-bottom: 15px;
-}
-
-.experience h2 {
-    margin-top: 0;
-    padding-bottom: 10px;
-    border-bottom: 2px solid white;
-}
-
-.experience h4 {
-    text-transform: none;
-}
-
-.experience p {
-    font-size: 1.5rem;
+.tech-used {
+    color: steelblue;
+    color: #3973ac;
 }
 
 @media (min-width: 768px) {
@@ -235,27 +128,19 @@ h4 {
         font-size: 10rem;
     }
 
-    .project-inner {
-        padding: 25px 30px;
+    .details {
+        padding: 45px 20px;
     }
-
-    .experience .mask {
-        padding: 20px 30px;
-    }
-
 }
 
 @media (min-width: 992px) {
-    .experience .mask {
-        padding: 45px 75px;
+    .details-inner {
+        max-width: 750px;
     }
 }
 
 @media (max-width: 992px) {
-    /* Overriding bootstrap col-md-4 width when smaller screen so projects take up full width */
-    .project {
-        width: 100%;
-    }
+
 }
 
 @media (min-width: 1200px) {

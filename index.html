@@ -13,11 +13,11 @@
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/jquery.matchHeight.js"></script>
   <script src="js/lib/masonry.pkgd.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <!--<script src="js/scripts.js"></script>-->
 </head>
 
 <body>
-  <nav class="nav">
+  <!--<nav class="nav">
       <div class="nav-menu-wrapper">
         <div class="nav-menu nav-navigate-within active">
           About
@@ -40,7 +40,7 @@
           </a>
         </div>
       </div>
-  </nav>
+  </nav>-->
   <div class="container-fluid main">
       <div class="screen-mask"></div>
       <div class="row" id="about"> <!-- ABOUT -->
@@ -62,140 +62,118 @@
         </div>
       </div> <!-- END ABOUT -->
 
-      <div class="row" id="projects"> <!-- PROJECTS -->
-        <h1 class="title">Projects</h1>
-        <div class="projects-container">
-            <div class="project col-md-4">
-                <div id="project-label" class="project-inner col-sm-12">
-                    <div class="project-mask"></div>
-                    <h2>Label</h2>
-                    <p>
-                    A Google Chrome extension to save all tabs in current window under a label which you can open up again later.
-                    </p>
-                    <p>Used: Google Chrome Extension API, JavaScript, HTML/CSS</p>
-                    <p><a href="https://chrome.google.com/webstore/detail/label/liomngjmcblfpilffbioehjcmdmhneaa">Extension can be found here</a></p>
-                    <p><a href="https://github.com/Jaacky/Label">GitHub repo</a></p>
-                </div>
-            </div>
-            <div class="project col-md-4">
-                <div id="project-nanograv" class="project-inner col-sm-12">
-                    <div class="project-mask"></div>
-                    <h2>NANOGrav Data Interface</h2>
-                    <p>
-                    An interface to filter, visualize and export the NANOGrav datasets.
-                    The graphs created can be user customized - graph heights, orientation, grouping, labeling, # of bins, and exportation to .png.
-                    </p>
-                    <p>Used: D3.js, Flask, jQuery, Bootstrap, HTML/CSS</p>
-                    <p><a href="https://data.nanograv.org/tools/">Website</a></p>
-                </div>
-            </div>
-            <div class="project col-md-4">
-            <div class="project-inner col-sm-12">
-                <div class="project-mask"></div>
-                <h2>U of T Course Scheduler</h2>
-                <p>
-                Given a set of desired courses, return all combinations of course schedules. Options to filter based on least # of conflicts or least time spent on campus.
-                </p>
-                <!--<p>Website: </p>-->
-                <p>Used: Express, Node.js, D3.js, Passport.js, jQuery, Jade, HTML/CSS</p>
-                <p><a href="https://github.com/uoft-course-scheduler/course-scheduler-app">GitHub repo</a></p>
-            </div>
-            </div>
-            <div class="project col-md-4">
-            <div class="project-inner col-sm-12">
-                <div class="project-mask"></div>
-                <h2>Visualyze</h2>
-                <p>
-                An web app allowing users to track their fitness statistics through graphs. Users also have the ability to create combinations of their graphs with more of their own or their friends' graphs. This gives them the freedom to determine how they use the graphs. For example, a graph of running times between friends to promote competition and accountability. Individual updates would also update the combined graph.
-                </p>
-                <p>Used: Express, Node.js, D3.js, Passport.js, jQuery, EJS, HTML/CSS</p>
-                <!--<p>Website: </p>-->
-                <p><a href="https://github.com/Jaacky/visualyze">GitHub repo</a></p>
-            </div>
-            </div>
-            <div class="project col-md-4">
-            <div id="project-bugsplat" class="project-inner col-sm-12">
-                <div class="project-mask"></div>
-                <h2>Bug Splat</h2>
-                <p>
-                A HTML Canvas game. Prevent the bugs from reaching the pies within the time limit.
-                </p>
-                <p>Used: HTML Canvas, JavaScript, HTML/CSS</p>
-                <p><a href="/bugSplat">Link to Game</a></p>
-                <!--<p>GitHub repo: </p>-->
-            </div>
-            </div> <!--%*-->
-        </div>
-        <div class="next-arrow" data-next-section="experiences">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-        </div>
-        </div> <!-- END PROJECTS -->
-        <div class="row" id="experiences">
-            <h1 class="title">Experiences</h1>
-            <div class="col-sm-offset-2 col-sm-8 experience">
-                <div class="mask">
-                <h2>Web Developer, IT Support Assistant</h2>
-                <h4>E.J. Pratt Library</h4>
+      <div class="row details" id="experience"> <!-- EXPERIENCE -->
+          <div class="details-inner">
+            <h1><i class="fa fa-flask" aria-hidden="true"></i> Experiences</h1>
+            <div class="experience"> <!-- PRATT EXPERIENCE -->
+                <h2>University of Toronto - E.J. Pratt Library</h2>
+                <h4>Web Developer, IT Support Assistant</h4>
                 <h4>Sept 2015 - Present</h4>
-                <p>
-                    > Implemented Solr as the library's archival records indexer and created a Python script converting all library records to fit Solr import formats
-                </p>
-                <p>
-                    > Added a custom lazy loading script improving page load times from 400s to 2s with no noticeable visual changes
-                </p>
-                <p>
-                    > Refreshed multiple sites to be mobile friendly and responsive
-                </p>
-                <p>
-                    > Provided technical support and troubleshot problems for both library staff and patrons
-                </p>
-                </div>
-            </div>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Implemented Solr as the library's archival records indexer and created a Python script converting all library records to fit Solr import formats</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Added a custom lazy loading script improving page load times from 400s to 2s with no noticeable visual changes</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Refreshed multiple sites to be mobile friendly and responsive</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Provided technical support and troubleshot problems for both library staff and patrons</p></li>
+                </ul>
+            </div> <!-- END PRATT EXPERIENCE -->
 
-            <div class="col-sm-offset-2 col-sm-8 experience">
-                <div class="mask">
-                <h2>Web Developer</h2>
-                <h4>McGill Space Institute</h4>
+            <div class="experience"> <!-- MSI EXPERIENCE -->
+                <h2>McGill Space Institute</h2>
+                <h4>Web Developer</h4>
                 <h4>May 2016 - Aug 2016</h4>
-                <p>
-                    > Built a web interface to manipulate raw and processed pulsar data in the NANOGrav databases
-                </p>
-                <p>
-                    > Used D3.js to create scatterplots, histograms and bar graphs which allow user customization - graph size, orientation, grouping, labeling, # of bins, and exportation to .png
-                </p>
-                <p>
-                    > Updated the NANOGrav API built on Flask to decrease the number of queries the interface used
-                </p>
-                </div>
-            </div>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Built a web interface to manipulate raw and processed pulsar data in the NANOGrav databases</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Used D3.js to create scatterplots, histograms and bar graphs which allow user customization - graph size, orientation, grouping, labeling, # of bins, and exportation to .png</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Updated the NANOGrav API built on Flask to decrease the number of queries the interface used</p></li>
+                </ul>
+            </div> <!-- END MSI EXPERIENCE -->
 
-            <div class="col-sm-offset-2 col-sm-8 experience">
-                <div class="mask">
-                <h2>Software Developer</h2>
-                <h4>Three Point Turn</h4>
+            <div class="experience"> <!-- 3PT EXPERIENCE -->
+                <h2>Three Point Turn</h2>
+                <h4>Software Developer</h4>
                 <h4>Dec 2014 - Aug 2015</h4>
-                <p>
-                    > Contributed to the rebranding of a location-based social media application and started the refactoring of the app from Yi to Node.js and Express. Added Facebook user authentication using Passport.js. Used Google Maps API and created custom Google Maps markers.
-                </p>
-                <p>
-                    > Built an e-commerce website using Magento with integration to the client's backend systems and wrote a PHP script to retrieve product images from a separate server and upload them to the corresponding product.
-                </p>
-                <p>
-                    > Updated the UI of a scheduling application built using Cordova to support iOS and Android
-                </p>
-                <p>
-                    > Updated and redesigned sites to mobile friendly and responsive
-                </p>
-                <p>
-                    > Contributed to the redesign of the company website and implemented the new design
-                </p>
-                <p>
-                    > Started the company style guide
-                </p>
-                </div>
-            </div>
-        </div> <!-- END EXPERIENCES -->
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Contributed to the rebranding of a location-based social media application and started the refactoring of the app from Yi to Node.js and Express. Added Facebook user authentication using Passport.js. Used Google Maps API and created custom Google Maps markers.</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Built an e-commerce website using Magento with integration to the client's backend systems and wrote a PHP script to retrieve product images from a separate server and upload them to the corresponding product.</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Updated the UI of a scheduling application built using Cordova to support iOS and Android</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Updated and redesigned sites to mobile friendly and responsive</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Contributed to the redesign of the company website and implemented the new design</p></li>
+                    <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Started the company style guide</p></li>
+                </ul>
+            </div> <!-- END 3PT EXPERIENCE -->
+          </div>
+      </div> <!-- END EXPERIENCE -->
+
+      <div class="row details" id="projects"> <!-- PROJECTS -->
+          <div class="details-inner">
+            <h1><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</h1>
+            <div class="project"> <!-- LABEL -->
+                <h2>Label</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Google Chrome Extension API, JavaScript, HTML/CSS</p>
+                    </li>
+                    <li>
+                        <!--<i class="fa fa-file-text-o" aria-hidden="true"></i>-->
+                        <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>A Google Chrome extension to save all tabs in current window under a label which you can open up again later.</p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="https://chrome.google.com/webstore/detail/label/liomngjmcblfpilffbioehjcmdmhneaa">Link to extension</a></p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="https://github.com/Jaacky/Label">GitHub repo</a></p>
+                    </li>
+                </ul>
+            </div> <!-- END LABEL -->
+
+            <div class="project"> <!-- UOFT SCHED -->
+                <h2>U of T Course Scheduler</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Express, Node.js, D3.js, Passport.js, jQuery, Jade, HTML/CSS</p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>Given a set of desired courses, return all combinations of course schedules. Options to filter based on least # of conflicts or least time spent on campus.</p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="https://github.com/uoft-course-scheduler/course-scheduler-app">GitHub repo</a></p>
+                    </li>
+                </ul>
+            </div> <!-- END UOFT SCHED -->
+
+            <div class="project"> <!-- VISUALYZE -->
+                <h2>Visualyze</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Express, Node.js, D3.js, Passport.js, jQuery, EJS, HTML/CSS</p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>An web app allowing users to track their fitness statistics through graphs. Users also have the ability to create combinations of their graphs with more of their own or their friends' graphs. This gives them the freedom to determine how they use the graphs. For example, a graph of running times between friends to promote competition and accountability. Individual updates would also update the combined graph.</p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="https://github.com/Jaacky/visualyze">GitHub repo</a></p>
+                    </li>
+                </ul>
+            </div> <!-- END VISUALYZE -->
+
+            <div class="project"> <!-- BUGSPLAT -->
+                <h2>Bug Splat</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> HTML Canvas, JavaScript, HTML/CSS</p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>
+                    A HTML Canvas game. Prevent the bugs from reaching the pies within the time limit.
+                    </p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="bugsplat.html">Link to Game</a></p>
+                    </li>
+                </ul>
+            </div> <!-- END BUGSPLAT -->
+        </div>
+      </div> <!-- END PROJECTS -->
   </div> <!-- END MAIN -->
 </body>
 </html>
