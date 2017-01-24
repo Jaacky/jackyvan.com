@@ -17,16 +17,25 @@
 </head>
 
 <body>
-  <!--<nav class="nav">
+  <nav class="nav">
+      <div id="nav-mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="nav-menu-wrapper">
-        <div class="nav-menu nav-navigate-within active">
-          About
+        <div class="nav-menu nav-navigate-within active" data-nav-to="landing">
+          Jacky
         </div>
-        <div class="nav-menu nav-navigate-within">
-          Projects
+        <div class="nav-menu nav-navigate-within" data-nav-to="courses">
+            Courses
         </div>
-        <div class="nav-menu nav-navigate-within">
+        <div class="nav-menu nav-navigate-within" data-nav-to="experiences">
           Experiences
+        </div>
+        <div class="nav-menu nav-navigate-within" data-nav-to="projects">
+          Projects
         </div>
         <div class="nav-menu" id="nav-resume">
           <a href="jacky_van_resume.pdf">Resume</a>
@@ -40,12 +49,12 @@
           </a>
         </div>
       </div>
-  </nav>-->
+  </nav>
   <div class="container-fluid main">
       <div class="screen-mask"></div>
-      <div class="row" id="about"> <!-- ABOUT -->
+      <div class="row" id="landing"> <!-- landing -->
         <div class="mask"></div>
-        <div class="about-container">
+        <div class="landing-container">
             <h1>
                 <span class="emphasize">Jacky Van</span>
             </h1>
@@ -60,9 +69,27 @@
             <i class="fa fa-arrow-down" aria-hidden="true"></i>
             <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
         </div>
-      </div> <!-- END ABOUT -->
+      </div> <!-- END landing -->
 
-      <div class="row details" id="experience"> <!-- EXPERIENCE -->
+      <div class="row details first" id="courses">
+          <div class="details-inner">
+              <h1><i class="fa fa-book" aria-hidden="true"></i> Interesting courses I've taken</h1>
+                <div class="classes">
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC458 - Computer Networks</p></li>
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC443 - Database System Technologies</p></li>
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC411 - Machine Learning and Data Mining</p></li>
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC384 - Introduction to Artificial Intelligence</p></li>
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC373 - Algorithm Design and Analysis</p></li>
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC369 - Operating Systems</p></li>
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC358 - Principles of Computer Networks</p></li>
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC318 - Design of Interactive Computational Media</p></li>
+                    </ul>
+                </div>
+          </div>
+      </div>
+
+      <div class="row details" id="experiences"> <!-- EXPERIENCE -->
           <div class="details-inner">
             <h1><i class="fa fa-flask" aria-hidden="true"></i> Experiences</h1>
             <div class="experience"> <!-- PRATT EXPERIENCE -->
@@ -70,6 +97,9 @@
                 <h4>Web Developer, IT Support Assistant</h4>
                 <h4>Sept 2015 - Present</h4>
                 <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> PHP, Solr, jQuery, JavaScript, HTML/CSS</p>
+                    </li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Implemented Solr as the library's archival records indexer and created a Python script converting all library records to fit Solr import formats</p></li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Added a custom lazy loading script improving page load times from 400s to 2s with no noticeable visual changes</p></li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Refreshed multiple sites to be mobile friendly and responsive</p></li>
@@ -82,6 +112,9 @@
                 <h4>Web Developer</h4>
                 <h4>May 2016 - Aug 2016</h4>
                 <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Flask, Python, D3.js, jQuery, JavaScript, HTML/CSS</p>
+                    </li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Built a web interface to manipulate raw and processed pulsar data in the NANOGrav databases</p></li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Used D3.js to create scatterplots, histograms and bar graphs which allow user customization - graph size, orientation, grouping, labeling, # of bins, and exportation to .png</p></li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Updated the NANOGrav API built on Flask to decrease the number of queries the interface used</p></li>
@@ -93,6 +126,9 @@
                 <h4>Software Developer</h4>
                 <h4>Dec 2014 - Aug 2015</h4>
                 <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Magento, PHP, Cordova, Express, Node.js, MySQL, Passport.js, jQuery, JavaScript, Pug, HTML/CSS</p>
+                    </li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Contributed to the rebranding of a location-based social media application and started the refactoring of the app from Yi to Node.js and Express. Added Facebook user authentication using Passport.js. Used Google Maps API and created custom Google Maps markers.</p></li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Built an e-commerce website using Magento with integration to the client's backend systems and wrote a PHP script to retrieve product images from a separate server and upload them to the corresponding product.</p></li>
                     <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Updated the UI of a scheduling application built using Cordova to support iOS and Android</p></li>
@@ -130,7 +166,7 @@
                 <h2>U of T Course Scheduler</h2>
                 <ul class="fa-ul">
                     <li>
-                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Express, Node.js, D3.js, Passport.js, jQuery, Jade, HTML/CSS</p>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Express, Node.js, D3.js, Passport.js, jQuery, JavaScript, Jade, HTML/CSS</p>
                     </li>
                     <li>
                         <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>Given a set of desired courses, return all combinations of course schedules. Options to filter based on least # of conflicts or least time spent on campus.</p>
@@ -145,7 +181,7 @@
                 <h2>Visualyze</h2>
                 <ul class="fa-ul">
                     <li>
-                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Express, Node.js, D3.js, Passport.js, jQuery, EJS, HTML/CSS</p>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Express, Node.js, PostgreSQL, D3.js, Passport.js, jQuery, JavaScript, EJS, HTML/CSS</p>
                     </li>
                     <li>
                         <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>An web app allowing users to track their fitness statistics through graphs. Users also have the ability to create combinations of their graphs with more of their own or their friends' graphs. This gives them the freedom to determine how they use the graphs. For example, a graph of running times between friends to promote competition and accountability. Individual updates would also update the combined graph.</p>
