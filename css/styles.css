@@ -49,7 +49,7 @@ p {
     right: 0;
     color: white;
     text-align: right;
-    background-color: black;
+    background-color: rgba(0,0,0,0.75);
     padding: 20px 50px;
 }
 
@@ -80,6 +80,10 @@ p {
 
 #nav-social-media {
     width: 100%;
+}
+
+#nav-social-media.nav-menu a {
+    display: inline-block;
 }
 
 /* Icon 3 from https://codepen.io/designcouch/pen/Atyop */
