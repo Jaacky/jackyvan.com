@@ -1,50 +1,22 @@
 <div class="row details" id="experiences"> <!-- EXPERIENCE -->
     <div class="details-inner">
-    <h1><i class="fa fa-flask" aria-hidden="true"></i> Experiences</h1>
-    <div class="experience"> <!-- PRATT EXPERIENCE -->
-        <h2>University of Toronto - E.J. Pratt Library</h2>
-        <h4>Web Developer, IT Support Assistant</h4>
-        <h4>Sept 2015 - Present</h4>
-        <ul class="fa-ul">
-            <li>
-                <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> PHP, Solr, jQuery, JavaScript, HTML/CSS</p>
-            </li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Implemented Solr as the library's archival records indexer and created a Python script converting all library records to fit Solr import formats</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Added a custom lazy loading script improving page load times from 400s to 2s with no noticeable visual changes</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Refreshed multiple sites to be mobile friendly and responsive</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Provided technical support and troubleshot problems for both library staff and patrons</p></li>
-        </ul>
-    </div> <!-- END PRATT EXPERIENCE -->
-
-    <div class="experience"> <!-- MSI EXPERIENCE -->
-        <h2>McGill Space Institute</h2>
-        <h4>Web Developer</h4>
-        <h4>May 2016 - Aug 2016</h4>
-        <ul class="fa-ul">
-            <li>
-                <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Flask, Python, D3.js, jQuery, JavaScript, HTML/CSS</p>
-            </li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Built a web interface to manipulate raw and processed pulsar data in the NANOGrav databases</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Used D3.js to create scatterplots, histograms and bar graphs which allow user customization - graph size, orientation, grouping, labeling, # of bins, and exportation to .png</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Updated the NANOGrav API built on Flask to decrease the number of queries the interface used</p></li>
-        </ul>
-    </div> <!-- END MSI EXPERIENCE -->
-
-    <div class="experience"> <!-- 3PT EXPERIENCE -->
-        <h2>Three Point Turn</h2>
-        <h4>Software Developer</h4>
-        <h4>Dec 2014 - Aug 2015</h4>
-        <ul class="fa-ul">
-            <li>
-                <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Magento, PHP, Cordova, Express, Node.js, MySQL, Passport.js, jQuery, JavaScript, Pug, HTML/CSS</p>
-            </li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Contributed to the rebranding of a location-based social media application and started the refactoring of the app from Yi to Node.js and Express. Added Facebook user authentication using Passport.js. Used Google Maps API and created custom Google Maps markers.</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Built an e-commerce website using Magento with integration to the client's backend systems and wrote a PHP script to retrieve product images from a separate server and upload them to the corresponding product.</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Updated the UI of a scheduling application built using Cordova to support iOS and Android</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Updated and redesigned sites to mobile friendly and responsive</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Contributed to the redesign of the company website and implemented the new design</p></li>
-            <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>Started the company style guide</p></li>
-        </ul>
-    </div> <!-- END 3PT EXPERIENCE -->
+        <h1><i class="fa fa-flask" aria-hidden="true"></i> Experiences</h1>
+        {% for experience in site.data.experiences %}
+            <div class="experience">
+                <h2>{{ experience.employer }}</h2>
+                <h4>{{ experience.position }}</h4>
+                <h4>{{ experience.time }}</h4>
+                <ul class="fa-ul">
+                    {% if experience.tech %}
+                        <li>
+                            <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> {{ experience.tech }}</p>
+                        </li>
+                    {% endif %}
+                    {% for blurb in experience.description %}
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>{{ blurb }}</p></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
     </div>
 </div> <!-- END EXPERIENCE -->

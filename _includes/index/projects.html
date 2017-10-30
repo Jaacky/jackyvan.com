@@ -1,70 +1,23 @@
 <div class="row details" id="projects"> <!-- PROJECTS -->
     <div class="details-inner">
         <h1><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</h1>
-        <div class="project"> <!-- LABEL -->
-            <h2>Label</h2>
-            <ul class="fa-ul">
-                <li>
-                    <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Google Chrome Extension API, JavaScript, HTML/CSS</p>
-                </li>
-                <li>
-                    <!--<i class="fa fa-file-text-o" aria-hidden="true"></i>-->
-                    <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>A Google Chrome extension to save all tabs in current window under a label which you can open up again later.</p>
-                </li>
-                <li>
-                    <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="https://chrome.google.com/webstore/detail/label/liomngjmcblfpilffbioehjcmdmhneaa">Link to extension</a></p>
-                </li>
-                <li>
-                    <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="https://github.com/Jaacky/Label">GitHub repo</a></p>
-                </li>
-            </ul>
-        </div> <!-- END LABEL -->
-
-        <div class="project"> <!-- UOFT SCHED -->
-            <h2>U of T Course Scheduler</h2>
-            <ul class="fa-ul">
-                <li>
-                    <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Express, Node.js, D3.js, Passport.js, jQuery, JavaScript, Jade, HTML/CSS</p>
-                </li>
-                <li>
-                    <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>Given a set of desired courses, return all combinations of course schedules. Options to filter based on least # of conflicts or least time spent on campus.</p>
-                </li>
-                <li>
-                    <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="https://github.com/uoft-course-scheduler/course-scheduler-app">GitHub repo</a></p>
-                </li>
-            </ul>
-        </div> <!-- END UOFT SCHED -->
-
-        <div class="project"> <!-- VISUALYZE -->
-            <h2>Visualyze</h2>
-            <ul class="fa-ul">
-                <li>
-                    <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> Express, Node.js, PostgreSQL, D3.js, Passport.js, jQuery, JavaScript, EJS, HTML/CSS</p>
-                </li>
-                <li>
-                    <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>An web app allowing users to track their fitness statistics through graphs. Users also have the ability to create combinations of their graphs with more of their own or their friends' graphs. This gives them the freedom to determine how they use the graphs. For example, a graph of running times between friends to promote competition and accountability. Individual updates would also update the combined graph.</p>
-                </li>
-                <li>
-                    <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="https://github.com/Jaacky/visualyze">GitHub repo</a></p>
-                </li>
-            </ul>
-        </div> <!-- END VISUALYZE -->
-
-        <div class="project"> <!-- BUGSPLAT -->
-            <h2>Bug Splat</h2>
-            <ul class="fa-ul">
-                <li>
-                    <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> HTML Canvas, JavaScript, HTML/CSS</p>
-                </li>
-                <li>
-                    <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>
-                A HTML Canvas game. Prevent the bugs from reaching the pies within the time limit.
-                </p>
-                </li>
-                <li>
-                    <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="bugsplat.html">Link to Game</a></p>
-                </li>
-            </ul>
-        </div> <!-- END BUGSPLAT -->
+        {% for project in site.data.projects %}
+            <div class="project">
+                <h2>{{ project.title }}</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> {{ project.tech }}</p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>{{ project.description }}</p>
+                    </li>
+                    {% for link in project.links %}
+                        <li>
+                            <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="{{ link.url }}">{{ link.name }}</a></p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
     </div>
 </div> <!-- END PROJECTS -->

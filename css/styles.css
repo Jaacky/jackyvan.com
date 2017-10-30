@@ -1,5 +1,20 @@
+@font-face {
+    font-family: 'Futura Std Book';
+    src: url('./fonts/Futura Std Book.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Thin';
+    src: url('./fonts/Futura_Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Enriqueta';
+    src: url('./fonts/Enriqueta-Regular.otf');
+}
+
 * {
-    font-family: 'Roboto';
+    font-family: 'Futura Std Book';
 }
 
 a {
@@ -22,11 +37,12 @@ h3 {
 }
  
 h4 {
-    font-size: 1.65rem;
+    font-size: 1.45rem;
 }
 
 p {
     font-size: 1.5rem;
+    font-family: Enriqueta;
 }
 
 .nav {
@@ -65,8 +81,8 @@ p {
     text-transform: uppercase;
     color: #e9ece5;
     letter-spacing: 3px;
-    font-weight: 300;
     font-size: 1.5rem;
+    font-family: Futura Thin;
 }
 
 .nav-menu:hover, .nav-menu a:hover {
@@ -74,7 +90,7 @@ p {
 }
 
 .nav-menu.active, .nav-menu.active a {
-    font-weight: 700;
+    font-family: Futura Std Book;
     color: white;
 }
 
@@ -225,12 +241,11 @@ p {
     font-size: 4rem;
 }
 
-#landing h2 {
-    font-weight: 300;
+#landing h2, #landing h3 {
+    font-family: Futura Thin;
 }
 
 #landing h3 {
-    font-weight: 300;
     font-size: 1.5rem;
 }
 
@@ -257,7 +272,6 @@ p {
 
 .details h1 {
     font-size: 3rem;
-    /*margin-bottom: 35px;*/
     text-align: center;
 }
 
@@ -277,6 +291,7 @@ p {
 .tech-used {
     color: steelblue;
     color: #3973ac;
+    font-family: Enriqueta;
 }
 
 @media (min-width: 768px) {

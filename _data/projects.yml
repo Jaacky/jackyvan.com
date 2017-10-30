@@ -1,0 +1,29 @@
+- title: Label
+  tech: Google Chrome Extension API, JavaScript, HTML/CSS
+  description: A Google Chrome extension to save all tabs in current window under a label which you can open up again later.
+  links:
+    - name: Link to extension
+      url: https://chrome.google.com/webstore/detail/label/liomngjmcblfpilffbioehjcmdmhneaa
+    - name: GitHub repo
+      url: https://github.com/Jaacky/Label
+
+- title: U of T Course Scheduler 
+  tech: Express, Node.js, D3.js, Passport.js, jQuery, JavaScript, Jade, HTML/CSS
+  description: Given a set of desired courses, return all combinations of course schedules. Options to filter based on least # of conflicts or least time spent on campus.
+  links:
+    - name: GitHub repo
+      url: https://github.com/uoft-course-scheduler/course-scheduler-app
+
+- title: Visualyze
+  tech: Express, Node.js, PostgreSQL, D3.js, Passport.js, jQuery, JavaScript, EJS, HTML/CSS
+  description: An web app allowing users to track their fitness statistics through graphs. Users also have the ability to create combinations of their graphs with more of their own or their friends' graphs. This gives them the freedom to determine how they use the graphs. For example, a graph of running times between friends to promote competition and accountability. Individual updates would also update the combined graph.
+  links:
+    - name: GitHub repo
+      url: https://github.com/Jaacky/visualyze
+
+- title: Bug Splat
+  tech: HTML Canvas, JavaScript, HTML/CSS
+  description: A HTML Canvas game. Prevent the bugs from reaching the pies within the time limit.
+  links:
+    - name: Link to game
+      url: /bugsplat.html

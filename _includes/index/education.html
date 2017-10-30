@@ -3,14 +3,11 @@
         <h1><i class="fa fa-book" aria-hidden="true"></i> Interesting courses I've taken</h1>
         <div class="classes">
             <ul class="fa-ul">
-                <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC458 - Computer Networks</p></li>
-                <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC443 - Database System Technologies</p></li>
-                <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC411 - Machine Learning and Data Mining</p></li>
-                <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC384 - Introduction to Artificial Intelligence</p></li>
-                <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC373 - Algorithm Design and Analysis</p></li>
-                <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC369 - Operating Systems</p></li>
-                <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC358 - Principles of Computer Networks</p></li>
-                <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>CSC318 - Design of Interactive Computational Media</p></li>
+                {% for course in site.data.courses %}
+                    <li>
+                        <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>{{ course.code }} - {{ course.name }}</p>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
