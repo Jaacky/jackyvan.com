@@ -1,0 +1,22 @@
+<div class="row details" id="experiences"> <!-- EXPERIENCE -->
+    <div class="details-inner">
+        <h1><i class="fa fa-flask" aria-hidden="true"></i> Experiences</h1>
+        {% for experience in site.data.experiences %}
+            <div class="experience">
+                <h2>{{ experience.employer }}</h2>
+                <h4>{{ experience.position }}</h4>
+                <h4>{{ experience.time }}</h4>
+                <ul class="fa-ul">
+                    {% if experience.tech %}
+                        <li>
+                            <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> {{ experience.tech }}</p>
+                        </li>
+                    {% endif %}
+                    {% for blurb in experience.description %}
+                        <li><i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>{{ blurb }}</p></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+</div> <!-- END EXPERIENCE -->

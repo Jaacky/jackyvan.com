@@ -1,0 +1,23 @@
+<div class="row details" id="projects"> <!-- PROJECTS -->
+    <div class="details-inner">
+        <h1><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</h1>
+        {% for project in site.data.projects %}
+            <div class="project">
+                <h2>{{ project.title }}</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code" aria-hidden="true"></i><p><span class="tech-used">Technologies used:</span> {{ project.tech }}</p>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-file-text-o" aria-hidden="true"></i><p>{{ project.description }}</p>
+                    </li>
+                    {% for link in project.links %}
+                        <li>
+                            <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p><a href="{{ link.url }}">{{ link.name }}</a></p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+</div> <!-- END PROJECTS -->

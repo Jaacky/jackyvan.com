@@ -1,0 +1,14 @@
+<div class="row details first" id="courses">
+    <div class="details-inner">
+        <h1><i class="fa fa-book" aria-hidden="true"></i> Interesting courses I've taken</h1>
+        <div class="classes">
+            <ul class="fa-ul">
+                {% for course in site.data.courses %}
+                    <li>
+                        <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>{{ course.code }} - {{ course.name }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,5 @@
-*.pyc
-venv/
+_site
+.sass-cache
+.jekyll-metadata
 
-.DS_STORE
+.DS_Store
