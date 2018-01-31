@@ -275,6 +275,12 @@ p {
     text-align: center;
 }
 
+.details h2 {
+    background-color: whitesmoke;
+    padding: 7px 5px;
+    margin-left: -5px;
+}
+
 .details h4 {
     /*color: #3973ac;*/
     text-transform: none;
