@@ -284,7 +284,7 @@ p {
     color: black;
 }
 
-.experience, .project, .classes {
+.experience, .project, .education, .classes {
     margin-top: 20px;
 }
 
@@ -334,6 +334,12 @@ p {
 
     .nav-menu, .nav-menu a {
         display: inline-block;
+    }
+
+    .two-col-list li {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
     }
 }
 

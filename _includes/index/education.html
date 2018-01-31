@@ -1,8 +1,14 @@
-<div class="row details first" id="courses">
+<div class="row details first" id="education">
     <div class="details-inner">
-        <h1><i class="fa fa-book" aria-hidden="true"></i> Interesting courses I've taken</h1>
+        <h1><i class="fa fa-book" aria-hidden="true"></i> Education</h1>
+        <div class="education">
+            <h2>University of Toronto</h2>
+            <h4>Computer Science Specialist</h4>
+            <h4>Sept 2012 - Aug 2017</h4>
+        </div>
         <div class="classes">
-            <ul class="fa-ul">
+            <h3>Interesting courses</h3>
+            <ul class="fa-ul two-col-list">
                 {% for course in site.data.courses %}
                     <li>
                         <i class="fa-li fa fa-angle-right" aria-hidden="true"></i><p>{{ course.code }} - {{ course.name }}</p>
