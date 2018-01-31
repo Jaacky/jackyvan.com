@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     $('.next-arrow').on('click', function() {
         $('html, body').animate({
-            scrollTop: $('#courses').offset().top - $('.nav').outerHeight()
+            scrollTop: $('#experiences').offset().top - $('.nav').outerHeight()
         }, 500);
     });
 
