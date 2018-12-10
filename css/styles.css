@@ -281,10 +281,15 @@ p {
 }
 
 .details h2 {
+    border-left: 8px solid white;
     background-color: whitesmoke;
     padding: 7px 10px;
-    margin-left: -10px;
+    margin-left: -17px;
     margin-right: -10px;
+}
+
+.details .present h2 {
+    border-left: 8px solid hsl(184, 73.9%, 34.5%);
 }
 
 .details h4 {

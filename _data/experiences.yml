@@ -1,7 +1,8 @@
 - employer: Ontario Teachers' Pension Plan
   position: Software Developer
   time: Sept 2017 - Present
-  tech: Spring, Java
+  tech: Spring, Java, AEM, Wicket, JWT, RabbitMQ
+  present: true
   
 - employer: University of Toronto - E.J. Pratt Library
   position: Web Developer, IT Support Assistant

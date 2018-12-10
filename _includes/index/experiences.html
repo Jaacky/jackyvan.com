@@ -2,7 +2,11 @@
     <div class="details-inner">
         <h1><i class="fa fa-flask" aria-hidden="true"></i> Experiences</h1>
         {% for experience in site.data.experiences %}
-            <div class="experience">
+            {% if experience.present %}
+                <div class="experience present">
+            {% else %}
+                <div class="experience">
+            {% endif %}
                 <h2>{{ experience.employer }}</h2>
                 <h4>{{ experience.position }}</h4>
                 <h4>{{ experience.time }}</h4>
