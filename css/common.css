@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Futura Std Book';
+    src: url('./fonts/Futura Std Book.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Thin';
+    src: url('./fonts/Futura_Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Enriqueta';
+    src: url('./fonts/Enriqueta-Regular.otf');
+}
+
+* {
+    font-family: 'Futura Std Book';
+}
+
+p {
+    font-family: Enriqueta;
+}

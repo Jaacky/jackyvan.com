@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     {% include analytics.html %}
+
+    <link rel="stylesheet" href="{{ 'css/common.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ 'css/blog.css' | absolute_url }}">
 </head>
     <body>
         {{ content }}
