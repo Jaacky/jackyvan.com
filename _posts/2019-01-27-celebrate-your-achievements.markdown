@@ -1,5 +1,0 @@
-Celebrate Your Achievements
-
-It's so easy to compare yourself and what you've done thus far with where someone else is currently and feel like you haven't done enough to celebrate. That's wrong and unfair to yourself. You should be proud of what you've done and achieved so far to meet your goals - even if you haven't accomplished your goals yet. What you shouldn't be is become satisfied with where you are; unless that is your goal. 
-
-You might have overcome a huge personal obstacle but to someone else, that obstacle might not have been that big, that doesn't matter. It was huge for you and you should be proud and celebrate it. Likewise, you shouldn't be putting down others achievements because they seem insignificant to you - you have no idea how big a goal it might have been to them. This could be as simple as hitting a new 5lb PR on your squat or a mental goal you've set like stop procrastinating email replies. To some people, it could look small, but if it's significant to you, you should be happy about it.
