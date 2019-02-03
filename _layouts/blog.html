@@ -6,10 +6,17 @@
     <title>{{ page.title }}</title>
     {% include analytics.html %}
 
+    <link rel="stylesheet" href="{{ 'css/lib/normalize-8.0.1.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ 'css/common.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ 'css/blog.css' | absolute_url }}">
 </head>
     <body>
-        {{ content }}
+        <div class="blog">
+            <nav class="blog__header">
+                <div class="blog__header__logo">Jacky</div>
+                <h1 class="blog__header__head">Shower Thoughts</h1>
+            </nav>
+            {{ content }}
+        </div>
     </body>
 </html>

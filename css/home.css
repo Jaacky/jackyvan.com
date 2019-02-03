@@ -67,7 +67,6 @@ p {
 
 .nav-menu:hover, .nav-menu a:hover {
     color: #adadad;
-    text-decoration: none;
 }
 
 .nav-menu.active, .nav-menu.active a {

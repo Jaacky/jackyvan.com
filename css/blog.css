@@ -1,3 +1,76 @@
-.dateline, .byline {
+* {
+    color: black;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        ". main sidebar"
+        "footer footer footer";
+}
+
+.blog__header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "logo title .";
+
+    padding: 25px;
+    margin-bottom: 25px;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Futura Thin';
+}
+
+.blog__header__logo {
+    grid-area: logo;
+}
+
+.blog__header__head {
+    grid-area: title;
+    justify-self: center;
+}
+
+.blog__posts {
+    grid-area: main;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog__post {
+    margin-bottom: 50px;
+}
+
+.post__title {
+    margin-bottom: 8px;
+    text-transform: none;
+    /* border-bottom: 4px solid hsl(12, 51%, 31%); */
+}
+
+.post__title:hover:before {
+    content: "";
+    border-left: 12px solid hsl(12, 51%, 31%);
+    padding-right: 12px;
+    margin-left: -24px;
+}
+
+.post__data {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.post__dateline, .post__byline {
     font-family: 'Futura Std Book';
+    color: hsla(0,0%,0%,0.55);
 }

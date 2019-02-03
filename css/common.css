@@ -15,8 +15,36 @@
 
 * {
     font-family: 'Futura Std Book';
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 p {
     font-family: Enriqueta;
+    line-height: 1.428571429;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+primary {
+    color: #90AFC5;
+}
+
+secondary {
+    color: #336B87;
+}
+
+tertiary {
+    color: #2A3132;
+}
+
+highlight {
+    color: #763626;
+    color: hsl(12, 51%, 31%);
 }
