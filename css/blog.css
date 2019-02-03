@@ -76,5 +76,5 @@ p {
 
 .post__dateline, .post__byline {
     font-family: 'Futura Std Book';
-    color: hsla(0,0%,0%,0.55);
+    color: hsla(0,0%,45%);
 }
