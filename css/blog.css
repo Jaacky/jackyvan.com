@@ -52,11 +52,10 @@ p {
     margin-bottom: 50px;
 }
 
-.blog__posts .post__title:hover:before {
-    content: "";
-    border-left: 12px solid hsl(12, 51%, 31%);
-    padding-right: 12px;
-    margin-left: -24px;
+.blog__post__readmore {
+    background-color: hsl(0, 0%, 88%);
+    padding: 2px 4px;
+    margin-left: 2px;
 }
 
 .post {
@@ -67,6 +66,13 @@ p {
     margin-bottom: 8px;
     text-transform: none;
     /* border-bottom: 4px solid hsl(12, 51%, 31%); */
+}
+
+.blog__posts .post__title:hover:before {
+    content: "";
+    border-left: 12px solid hsl(12, 51%, 31%);
+    padding-right: 12px;
+    margin-left: -24px;
 }
 
 .post__data {
