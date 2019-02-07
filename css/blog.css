@@ -5,6 +5,8 @@
 p {
     margin: 0;
     margin-bottom: 8px;
+    line-height: 1.6;
+    font-size: 18px;
 }
 
 .blog {
@@ -60,6 +62,15 @@ p {
 
 .post {
     grid-area: main;
+}
+
+.post blockquote {
+    border-left: 10px solid hsl(0, 0%, 88%);
+}
+
+.post blockquote p {
+    background-color: hsl(0, 0%, 95%);
+    padding: 20px 30px;
 }
 
 .post__title {
