@@ -6,7 +6,8 @@ p {
     margin: 0;
     margin-bottom: 8px;
     line-height: 1.6;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.8rem;
 }
 
 .blog {
@@ -36,11 +37,13 @@ p {
 
 .blog__header__logo {
     grid-area: logo;
+    font-size: 1.6rem;
 }
 
 .blog__header__head {
     grid-area: title;
     justify-self: center;
+    font-size: 2.4rem;
 }
 
 .blog__posts {
@@ -76,6 +79,7 @@ p {
 .post__title {
     margin-bottom: 8px;
     text-transform: none;
+    font-size: 2.2em;
     /* border-bottom: 4px solid hsl(12, 51%, 31%); */
 }
 
@@ -94,4 +98,5 @@ p {
 .post__dateline, .post__byline {
     font-family: 'Futura Std Book';
     color: hsla(0,0%,45%);
+    font-size: 1.6rem;
 }

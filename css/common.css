@@ -13,6 +13,16 @@
     src: url('./fonts/Enriqueta-Regular.otf');
 }
 
+:root {
+    font-size: 62.5%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
 * {
     font-family: 'Futura Std Book';
     box-sizing: border-box;
