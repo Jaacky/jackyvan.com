@@ -83,7 +83,11 @@ p {
     /* border-bottom: 4px solid hsl(12, 51%, 31%); */
 }
 
-.blog__posts .post__title:hover:before {
+.post__title a {
+    display: inline-block;
+}
+
+.blog__posts .post__title a:hover:before {
     content: "";
     border-left: 12px solid hsl(12, 51%, 31%);
     padding-right: 12px;
