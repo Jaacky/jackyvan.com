@@ -63,6 +63,10 @@ p {
     margin-left: 2px;
 }
 
+.blog__post__readmore:hover {
+    background-color: hsl(0, 0%, 78%);
+}
+
 .post {
     grid-area: main;
 }
