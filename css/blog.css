@@ -71,6 +71,10 @@ p {
     grid-area: main;
 }
 
+.post p {
+    margin-bottom: 22px;
+}
+
 .post blockquote {
     border-left: 10px solid hsl(0, 0%, 88%);
 }
@@ -107,4 +111,8 @@ p {
     font-family: 'Futura Std Book';
     color: hsla(0,0%,45%);
     font-size: 1.6rem;
+}
+
+.shower_thoughts_text_logo {
+    height: 128px;
 }
