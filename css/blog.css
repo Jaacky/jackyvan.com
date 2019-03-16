@@ -1,5 +1,16 @@
 * {
+    font-family: 'Montserrat';
+    font-weight: normal;
     color: black;
+}
+
+tt, code, kbd, samp {
+    font-family: 'Inconsolata';
+}
+
+code {
+    background-color: hsl(0,0%,92%);
+    padding: 2px 5px;
 }
 
 p {
@@ -8,6 +19,7 @@ p {
     line-height: 1.6;
     /* font-size: 18px; */
     font-size: 1.8rem;
+    /* font-family: 'Montserrat'; */
 }
 
 .blog {
@@ -59,8 +71,9 @@ p {
 
 .blog__post__readmore {
     background-color: hsl(0, 0%, 88%);
-    padding: 2px 4px;
+    padding: 2px 5px;
     margin-left: 2px;
+    letter-spacing: 1px;
 }
 
 .blog__post__readmore:hover {
@@ -88,6 +101,7 @@ p {
     margin-bottom: 0;
     text-transform: none;
     font-size: 2.2em;
+    font-family: 'Montserrat';
     /* border-bottom: 4px solid hsl(12, 51%, 31%); */
 }
 
@@ -102,13 +116,14 @@ p {
     margin-left: -24px;
 }
 
-.post__data {
+p.post__data {
     margin: 0;
     margin-bottom: 8px;
 }
 
 .post__dateline, .post__byline {
-    font-family: 'Futura Std Book';
+    /* font-family: 'Futura Std Book'; */
+    font-family: 'Montserrat';
     color: hsla(0,0%,45%);
     font-size: 1.6rem;
 }

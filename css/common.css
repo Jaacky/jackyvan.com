@@ -13,6 +13,48 @@
     src: url('./fonts/Enriqueta-Regular.otf');
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Medium.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('./fonts/Roboto_Slab/RobotoSlab-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('./fonts/Roboto_Slab/RobotoSlab-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./fonts/Inconsolata/Inconsolata-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./fonts/Inconsolata/Inconsolata-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
 :root {
     font-size: 62.5%;
     line-height: 1.15;
