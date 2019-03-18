@@ -1,8 +1,7 @@
 - employer: Ontario Teachers' Pension Plan
   position: Software Developer
-  time: Sept 2017 - Present
+  time: Sept 2017 - Feb 2019
   tech: Spring, Spring Boot, Java, AEM, JavaScript, Wicket, JWT, RabbitMQ
-  present: true
   description:
     - Built internal applications and RESTful APIs in Spring and Spring Boot - integrating the use of JWT, Salesforce Marketing Cloud and RabbitMQ
     - Upgrade AEM from version 6.0 to 6.3 and migrated over 1000 pages of content and 9000 assets
