@@ -19,7 +19,7 @@ p {
     line-height: 1.6;
     /* font-size: 18px; */
     font-size: 1.8rem;
-    /* font-family: 'Montserrat'; */
+    font-family: 'Enriqueta';
 }
 
 .blog {
@@ -58,6 +58,10 @@ p {
     font-size: 2.4rem;
 }
 
+.shower_thoughts_text_logo {
+    height: 128px;
+}
+
 .blog__posts {
     grid-area: main;
     list-style: none;
@@ -86,6 +90,13 @@ p {
 
 .post p {
     margin-bottom: 22px;
+}
+
+.post li {
+    font-family: 'Enriqueta';
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
 }
 
 .post blockquote {
@@ -126,8 +137,4 @@ p.post__data {
     font-family: 'Montserrat';
     color: hsla(0,0%,45%);
     font-size: 1.6rem;
-}
-
-.shower_thoughts_text_logo {
-    height: 128px;
 }

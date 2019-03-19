@@ -10,7 +10,9 @@
 
 @font-face {
     font-family: 'Enriqueta';
-    src: url('./fonts/Enriqueta-Regular.otf');
+    src: url('./fonts/Enriqueta/Enriqueta-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
