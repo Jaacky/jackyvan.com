@@ -14,12 +14,13 @@
     <body>
         <div class="blog">
             <nav class="blog__header">
-                <div class="blog__header__logo">
+                <div class="blog__header__name">
                     <a href="/">Jacky</a>
                 </div>
                 <a href="/blog.html" class="blog__header__head">
                     <img class="shower_thoughts_text_logo" src="{{ '/img/Rounded_Shower_Thoughts_Lowercase_v0.0.3.svg' | absolute_url }}"/>
                 </a>
+                <div><!-- Placeholder for flex to center logo --></div>
             </nav>
             {{ content }}
             {% include footer.html %}
