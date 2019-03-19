@@ -7,6 +7,7 @@
     {% include analytics.html %}
 
     <!-- <link rel="stylesheet" href="{{ 'css/lib/normalize-8.0.1.css' | absolute_url }}"> -->
+    <link rel="stylesheet" href="{{ 'css/lib/font-awesome.min.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ 'css/common.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ 'css/blog.css' | absolute_url }}">
 </head>
@@ -21,6 +22,7 @@
                 </a>
             </nav>
             {{ content }}
+            {% include footer.html %}
         </div>
     </body>
 </html>

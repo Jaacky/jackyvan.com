@@ -23,6 +23,7 @@ p {
 }
 
 .blog {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
@@ -82,6 +83,39 @@ p {
 
 .blog__post__readmore:hover {
     background-color: hsl(0, 0%, 78%);
+}
+
+.blog__footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    
+    background-color: black;
+}
+
+.blog__footer * {
+    color: white;
+}
+
+.blog__footer__credits {
+    margin-bottom: 0;
+    flex: 0 1 auto;
+}
+
+.blog__footer__credits a {
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-left: 3px;
+}
+
+.blog__footer__credits a:hover {
+    border-bottom-width: 2px;
+}
+
+.blog__footer_social_media a {
+    padding: 0 4px;
 }
 
 .post {
