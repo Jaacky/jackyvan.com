@@ -35,7 +35,7 @@ h2 {
 h3 {
     font-size: 1.65rem;
 }
- 
+
 h4 {
     font-size: 1.45rem;
 }
@@ -259,6 +259,20 @@ p {
     padding: 5px;
 }
 
+.image-credits {
+    position: absolute;
+    bottom: -28px;
+    width: 100%;
+    letter-spacing: 0px;
+    background-color: hsla(0, 0%, 0%, 0.35);
+    padding: 4px 8px;
+}
+
+.image-credits a {
+    color: white;
+    text-decoration: underline;
+}
+
 .details {
     text-align: center;
 }
@@ -301,6 +315,13 @@ p {
     color: black;
 }
 
+#experiences {
+    /*
+        Used to offset the photo credit overflow in mobile
+    */
+    padding-top: 28px;
+}
+
 .experience, .project, .education, .classes {
     margin-top: 20px;
 }
@@ -318,6 +339,20 @@ p {
 
     #landing h1 .de-emphasize {
         font-size: 7rem;
+    }
+
+    .image-credits {
+        bottom: 5px;
+        right: 5px;
+        border-radius: 3px;
+        width: auto;
+    }
+
+    #experiences {
+        /*
+            Revert offset needed for the photo credit overflow in mobile
+        */
+        padding-top: 0px;
     }
 
     .details-inner {
