@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Futura Std Book';
+    src: url('./fonts/Futura Std Book.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Thin';
+    src: url('./fonts/Futura_Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Enriqueta';
+    src: url('./fonts/Enriqueta/Enriqueta-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Medium.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('./fonts/Roboto_Slab/RobotoSlab-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('./fonts/Roboto_Slab/RobotoSlab-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./fonts/Inconsolata/Inconsolata-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./fonts/Inconsolata/Inconsolata-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    font-size: 62.5%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Futura Std Book';
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+p {
+    font-family: Enriqueta;
+    line-height: 1.428571429;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+primary {
+    color: #90AFC5;
+}
+
+secondary {
+    color: #336B87;
+}
+
+tertiary {
+    color: #2A3132;
+}
+
+highlight {
+    color: #763626;
+    color: hsl(12, 51%, 31%);
+}

@@ -1,0 +1,16 @@
+---
+layout: blog
+---
+<ul class="blog__posts">
+{% for post in site.posts %}
+    <li class="blog__post">
+        <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post__data">
+            <span class="post__dateline">{{ post.date | date_to_string }} / </span>
+            <span class="post__byline">{{ post.author }}</span>
+        </p>
+        <p>{{ post.excerpt }} <a class="blog__post__readmore" href="{{ post.url }}">...</a></p>
+    </li>
+{% endfor %}
+</ul>
+

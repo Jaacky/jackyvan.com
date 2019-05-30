@@ -1,0 +1,13 @@
+---
+layout: blog
+---
+<div class="post">
+    <h2 class="post__title">{{ page.title }}</h2>
+
+    <p class="post__data">
+        <span class="post__dateline">{{ page.date | date_to_string }} / </span>
+        <span class="post__byline">{{ page.author }}</span>
+    </p>
+    
+    {{ content }}
+</div>

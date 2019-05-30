@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="186.372" height="157.434" viewBox="0 0 186.372 157.434">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="20" height="11" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(-31.899 -51.025)">
+    <g id="Group_2" data-name="Group 2" transform="translate(16 8)">
+      <g id="Rounded_Shower_Combo" data-name="Rounded Shower Combo" transform="translate(-38.412 14.776)">
+        <g id="Group_1" data-name="Group 1" transform="translate(0)">
+          <g id="Rounded_Shower_Pole" data-name="Rounded Shower Pole" transform="matrix(0.978, -0.208, 0.208, 0.978, -8.659, 25.106)">
+            <path id="Path_5" data-name="Path 5" d="M-261.523,176.449-264,64s.124-32,32-32c33.173,0,32,32,32,32" transform="translate(324)" fill="none" stroke="#000" stroke-width="4"/>
+          </g>
+          <g id="Rounded_Shower_Head" data-name="Rounded Shower Head" transform="matrix(0.927, -0.375, 0.375, 0.927, -14.651, 49.443)">
+            <path id="Path_6" data-name="Path 6" d="M176,96H144l16-16Z" transform="translate(-34 -16)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="4"/>
+          </g>
+        </g>
+        <g id="Rounded_Water_Drops" data-name="Rounded Water Drops" transform="translate(-46.228 45.158) rotate(-22)">
+          <g id="Repeat_Grid_3" data-name="Repeat Grid 3" transform="translate(144 100)" clip-path="url(#clip-path)">
+            <g transform="translate(-111.5 -85)">
+              <line id="Line_2" data-name="Line 2" y2="11" transform="translate(113.352 84.587)" fill="none" stroke="#000" stroke-width="1"/>
+            </g>
+            <g transform="translate(-103.5 -85)">
+              <line id="Line_2-2" data-name="Line 2" y2="11" transform="translate(113.352 84.587)" fill="none" stroke="#000" stroke-width="1"/>
+            </g>
+            <g transform="translate(-95.5 -85)">
+              <line id="Line_2-3" data-name="Line 2" y2="11" transform="translate(113.352 84.587)" fill="none" stroke="#000" stroke-width="1"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <text id="Thoughts" transform="translate(57.271 152)" font-size="32" font-family="RobotoSlab-Regular, Roboto Slab"><tspan x="0" y="0">Thoughts</tspan></text>
+    </g>
+  </g>
+</svg>

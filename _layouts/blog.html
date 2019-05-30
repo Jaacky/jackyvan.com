@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    {% include analytics.html %}
+
+    <!-- <link rel="stylesheet" href="{{ 'css/lib/normalize-8.0.1.css' | absolute_url }}"> -->
+    <link rel="stylesheet" href="{{ 'css/lib/font-awesome.min.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ 'css/common.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ 'css/blog.css' | absolute_url }}">
+</head>
+    <body>
+        <div class="blog">
+            <nav class="blog__header">
+                <div class="blog__header__name">
+                    <a href="/">Jacky</a>
+                </div>
+                <a href="/blog.html" class="blog__header__head">
+                    <img class="shower_thoughts_text_logo" src="{{ '/img/Rounded_Shower_Thoughts_Lowercase_v0.0.3.svg' | absolute_url }}"/>
+                </a>
+                <div><!-- Placeholder for flex to center logo --></div>
+            </nav>
+            {{ content }}
+            {% include footer.html %}
+        </div>
+    </body>
+</html>
