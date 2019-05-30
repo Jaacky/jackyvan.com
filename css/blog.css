@@ -107,6 +107,7 @@ p {
 
 .post {
     grid-area: main;
+    margin-bottom: 33px;
 }
 
 .post p {
