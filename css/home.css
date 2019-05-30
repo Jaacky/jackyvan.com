@@ -178,7 +178,7 @@ p {
 
 .next-arrow {
 	position: absolute;
-	bottom: 25px;
+    bottom: 50px;
 	left: 50%;
 	transform: translateX(-50%);
 	font-size: 2.5rem;
@@ -206,6 +206,7 @@ p {
     letter-spacing: 3px;
     text-align: center;
     color: white;
+    position: relative;
 }
 
 #landing .mask {
@@ -328,6 +329,10 @@ p {
 
     #landing h1 .de-emphasize {
         font-size: 7rem;
+    }
+
+    .next-arrow {
+        bottom: 25px;
     }
 
     .image-credits {
