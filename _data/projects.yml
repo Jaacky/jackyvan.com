@@ -1,3 +1,10 @@
+- title: Typing Wars
+  tech: Go, React, Redux, Redux Saga, Websockets, Protobuf, Webpack, Nginx, Docker, HTML/CSS
+  description: A real time 2-player typing game. Prevent words from reaching your base & the last one standing wins.
+  links:
+    - name: GitHub repo
+      url: https://github.com/Jaacky/typingwars
+
 - title: Label
   tech: Google Chrome Extension API, JavaScript, HTML/CSS
   description: A Google Chrome extension to save all tabs in current window under a label which you can open up again later.
