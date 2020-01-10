@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 _drafts/
+_data/navigation.yml
 
 .DS_Store
 NOTES.md
